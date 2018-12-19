@@ -1,3 +1,14 @@
+type Person {
+    name: String!
+    age: Int!
+}
+
 type Query {
-    hello(name: String): String!
+    hello: String
+    owner: Person
+    allPersons: [Person!]!
+}
+
+type Mutation {
+    createPerson(name: String!, age: Int!): Person!
 }

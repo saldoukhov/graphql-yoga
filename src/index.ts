@@ -1,11 +1,5 @@
-import { GraphQLServer } from 'graphql-yoga'
-// import { resolvers } from './resolvers'
-
-const resolvers = {
-    Query: {
-        hello: (_, { name }) => `Hello ${name || 'World'}`,
-    },
-}
+import {GraphQLServer} from 'graphql-yoga'
+import {resolvers} from "./resolvers";
 
 const server = new GraphQLServer({
     typeDefs: './src/schema.graphql',

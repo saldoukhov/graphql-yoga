@@ -4,11 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "gen": "graphql-schema-typescript generate-ts src/schema.graphql --output src/schemas.d.ts"
   },
-  "dependencies": {
-    "graphql-yoga": "^1.16.7",
+  "devDependencies": {
+    "graphql-schema-typescript": "^1.2.8",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.16.7"
   }
 }
