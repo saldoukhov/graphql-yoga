@@ -1,0 +1,17 @@
+service: dev-user-serge-api1
+
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  handleRequest:
+    handler: handler.server
+    events:
+      - http:
+          path: /
+          method: post
+          cors: true
