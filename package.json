@@ -1,0 +1,14 @@
+{
+  "name": "yoga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.16.7",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
